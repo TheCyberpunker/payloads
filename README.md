@@ -1,0 +1,2 @@
+# BugBounty
+Xss payloads examples.
