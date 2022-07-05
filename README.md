@@ -324,5 +324,5 @@ img{background-image:url('javascript:alert()')}
 
 ## Version Control
 
-- [Git Version - TheCyberpunker/smartcontracts](https://github.com/TheCyberpunker/payloads)
+- [Git Version - TheCyberpunker/payloads](https://github.com/TheCyberpunker/payloads)
 - [Web Version - thecyberpunker.com](https://thecyberpunker.com/xss/xss-payloads/)
