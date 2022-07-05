@@ -320,3 +320,9 @@ img{background-image:url('javascript:alert()')}
 - [BXSS](https://github.com/ethicalhackingplayground/bxss) - Blind XSS 
 - [SSTI- XSS Finder](https://github.com/darklotuskdb/SSTI-XSS-Finder) - XSS Finder Via SSTI
 - [CyberChef encoding](https://gchq.github.io/CyberChef/#recipe=Escape_Unicode_Characters('%5C%5Cu',true,4,true)&input=JQCEH) - Encode unicode character with cyberchef.
+
+
+## Version Control
+
+- [Git Version - TheCyberpunker/smartcontracts](https://github.com/TheCyberpunker/payloads)
+- [Web Version - thecyberpunker.com](https://thecyberpunker.com/xss/xss-payloads/)
